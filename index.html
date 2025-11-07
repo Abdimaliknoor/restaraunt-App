@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Smythe&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Special+Gothic+Condensed+One&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+    <title>Restaurant App</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <p class="name-txt">Abdimalik's Diner</p>
+        <p class="desc">The best burgers and pizzas in town.</p>
+      </div>
+    </header>
+    <main>
+      <div class="cards-container" id="cards-container"></div>
+
+      <div class="order-container" id="order-container"></div>
+    </main>
+
+    <div class="pay-model" id="pay-model">
+      <h4 class-header>Enter card details</h4>
+      <form id="form">
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Enter your name"
+          required
+        />
+
+        <input
+          type="text"
+          id="card-number"
+          name="card"
+          placeholder="Enter card number"
+          required
+        />
+
+        <input
+          type="text"
+          id="number"
+          name="cvv"
+          placeholder="Enter your CVV"
+          required
+        />
+
+        <button type="submit" class="pay-btn" id="pay-btn">Pay</button>
+      </form>
+    </div>
+    <div class="show-message" id="show-message"></div>
+
+    <script src="./main.js" type="module"></script>
+  </body>
+</html>
